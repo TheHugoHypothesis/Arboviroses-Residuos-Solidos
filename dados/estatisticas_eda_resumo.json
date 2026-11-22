@@ -1,0 +1,43 @@
+{
+    "total_registros": 29401,
+    "municipios_unicos": 5570,
+    "anos": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+    ],
+    "total_casos_notificados": 15332791,
+    "total_casos_confirmados": 11718488,
+    "total_dengue_conf": 11066984,
+    "total_chik_conf": 632436,
+    "total_zika_conf": 19068,
+    "total_fa_casos": 124,
+    "media_casos_confirmados": 398.5744702561137,
+    "variancia_casos_confirmados": 22518766.172829844,
+    "razao_superdispersao_phi": 56498.265326326255,
+    "percentual_zeros": 19.43471310499643,
+    "estratos_risco_percentual": {
+        "Baixo": 51.28056868813986,
+        "Epidêmico": 28.978606169858168,
+        "Médio": 13.693411788714668,
+        "Alto": 6.047413353287303
+    },
+    "respondencia_por_ano": {
+        "2019": 3712,
+        "2020": 4589,
+        "2021": 4900,
+        "2022": 5060,
+        "2023": 4778,
+        "2024": 4854
+    },
+    "indicadores_medianas": {
+        "cobertura_coleta_pct": 82.5,
+        "despesa_percapita_ano": 102.56,
+        "massa_percapita_kg_dia": 0.77,
+        "custo_coleta_pct": 49.84,
+        "terceirizacao_coleta_pct": 21.57
+    }
+}

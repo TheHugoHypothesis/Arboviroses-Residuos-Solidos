@@ -1,0 +1,49 @@
+flowchart LR
+    %% Bases de Dados
+    subgraph Bases["1. Fontes de Dados"]
+        D1[("SINAN / DATASUS<br>• Notificações de Arboviroses<br>• Filtro de Casos Confirmados<br>• Exclusão de Febre Amarela")]
+        D2[("SNIS & SINISA<br>• Indicadores de Resíduos<br>• Cobertura, Despesa e Massa<br>• Forma de Destinação Final")]
+        D3[("Demografia IBGE<br>• População Total e Urbana<br>• Compatibilização por Código")]
+    end
+
+    %% Pré-processamento
+    subgraph Prep["2. Pré-processamento"]
+        P1["Painel Integrado Município-Ano<br>• Cálculo de Incidência Relativa<br>• Estruturação de Offset Logarítmico<br>• Estratificação em Classes de Risco"]
+        CV["Divisão Temporal de Estresse<br>• Janela Histórica para Treino<br>• Janela Prospectiva sob Quebra de Regime"]
+    end
+
+    %% Modelagem
+    subgraph Modelos["3. Modelagem"]
+        M1["Quase-Poisson com Matriz Sanduíche<br>• Ligação Log-Linear Multiplicativa<br>• Correção Robusta de Huber-White<br>• Estimativa de Efeitos Marginais"]
+        M2["Random Forest Regressor<br>• Particionamento Ortogonal Recursivo<br>• Independência de Premissas Distribucionais<br>• Curvas de Dependência Parcial (PDP)"]
+    end
+
+    %% Avaliação e Interpretação
+    subgraph Avaliacao["4. Avaliação Metodológica"]
+        E1["Métricas de Desempenho<br>• Avaliação de Resíduos Contínuos<br>• Métricas Macro sob Desbalanceamento<br>• Sensibilidade sobre Classes Extremas"]
+        E2["Análise Causal e Não Linear<br>• Controle de Fatores de Confusão<br>• Identificação de Efeitos Limiar"]
+    end
+
+    %% Conexões
+    D1 --> P1
+    D2 --> P1
+    D3 --> P1
+    P1 --> CV
+    CV --> M1
+    CV --> M2
+    M1 --> E1
+    M1 --> E2
+    M2 --> E1
+    M2 --> E2
+
+    %% Estilização Monocromática (Padrão SBC)
+    classDef default fill:#ffffff,stroke:#000000,stroke-width:1px,color:#000000;
+    classDef database fill:#f2f2f2,stroke:#000000,stroke-width:1.5px,color:#000000;
+
+    class D1,D2,D3 database;
+    class P1,CV,M1,M2,E1,E2 default;
+
+    style Bases fill:#ffffff,stroke:#000000,stroke-width:1px,stroke-dasharray: 4 4,color:#000000
+    style Prep fill:#ffffff,stroke:#000000,stroke-width:1px,stroke-dasharray: 4 4,color:#000000
+    style Modelos fill:#ffffff,stroke:#000000,stroke-width:1px,stroke-dasharray: 4 4,color:#000000
+    style Avaliacao fill:#ffffff,stroke:#000000,stroke-width:1px,stroke-dasharray: 4 4,color:#000000

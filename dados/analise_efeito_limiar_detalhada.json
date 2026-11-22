@@ -1,0 +1,185 @@
+{
+    "rf_multivariado_r2": 0.7134264037429674,
+    "importancias_features": {
+        "cobertura_coleta_pct": 0.14331456261325878,
+        "despesa_percapita_ano": 0.09686491237296617,
+        "massa_percapita_kg_dia": 0.09112842234699274,
+        "populacao_total": 0.13343360776685118,
+        "custo_coleta_pct": 0.09205758871551824,
+        "terceirizacao_coleta_pct": 0.05624206001392559,
+        "presenca_lixao": 0.08346602308553953,
+        "regiao_Nordeste": 0.03844842060747854,
+        "regiao_Norte": 0.024902974035714006,
+        "regiao_Sudeste": 0.024062065797793995,
+        "regiao_Sul": 0.1293615788304113,
+        "ano_2020": 0.03593429922335988,
+        "ano_2021": 0.050783484590189894
+    },
+    "pdp_cobertura_pontos": [
+        {
+            "cobertura": 36.44,
+            "taxa_marginal": 11.657198954884397
+        },
+        {
+            "cobertura": 38.06974358974359,
+            "taxa_marginal": 11.527059548698242
+        },
+        {
+            "cobertura": 39.69948717948718,
+            "taxa_marginal": 11.393489998497982
+        },
+        {
+            "cobertura": 41.32923076923077,
+            "taxa_marginal": 11.280043459860455
+        },
+        {
+            "cobertura": 42.95897435897436,
+            "taxa_marginal": 10.931180150515566
+        },
+        {
+            "cobertura": 44.58871794871795,
+            "taxa_marginal": 10.947172528579271
+        },
+        {
+            "cobertura": 46.21846153846154,
+            "taxa_marginal": 11.089573441315641
+        },
+        {
+            "cobertura": 47.84820512820512,
+            "taxa_marginal": 11.70774113797595
+        },
+        {
+            "cobertura": 49.47794871794872,
+            "taxa_marginal": 12.102097996323971
+        },
+        {
+            "cobertura": 51.107692307692304,
+            "taxa_marginal": 14.063009757279344
+        },
+        {
+            "cobertura": 52.7374358974359,
+            "taxa_marginal": 14.163682182793652
+        },
+        {
+            "cobertura": 54.367179487179484,
+            "taxa_marginal": 14.476088350345435
+        },
+        {
+            "cobertura": 55.996923076923075,
+            "taxa_marginal": 14.178221867154244
+        },
+        {
+            "cobertura": 57.626666666666665,
+            "taxa_marginal": 14.69913439819903
+        },
+        {
+            "cobertura": 59.256410256410255,
+            "taxa_marginal": 14.5825738641547
+        },
+        {
+            "cobertura": 60.886153846153846,
+            "taxa_marginal": 14.281300812379808
+        },
+        {
+            "cobertura": 62.515897435897436,
+            "taxa_marginal": 14.219483689516329
+        },
+        {
+            "cobertura": 64.14564102564103,
+            "taxa_marginal": 14.229325799357687
+        },
+        {
+            "cobertura": 65.77538461538461,
+            "taxa_marginal": 14.879696145152215
+        },
+        {
+            "cobertura": 67.40512820512821,
+            "taxa_marginal": 16.379028981282417
+        },
+        {
+            "cobertura": 69.0348717948718,
+            "taxa_marginal": 19.147381896132856
+        },
+        {
+            "cobertura": 70.66461538461539,
+            "taxa_marginal": 18.9413708234319
+        },
+        {
+            "cobertura": 72.29435897435897,
+            "taxa_marginal": 28.442925213715576
+        },
+        {
+            "cobertura": 73.92410256410257,
+            "taxa_marginal": 37.23104738851283
+        },
+        {
+            "cobertura": 75.55384615384615,
+            "taxa_marginal": 40.260225584676284
+        },
+        {
+            "cobertura": 77.18358974358975,
+            "taxa_marginal": 39.45235585834045
+        },
+        {
+            "cobertura": 78.81333333333333,
+            "taxa_marginal": 41.12678746138525
+        },
+        {
+            "cobertura": 80.44307692307692,
+            "taxa_marginal": 42.60385666675965
+        },
+        {
+            "cobertura": 82.07282051282051,
+            "taxa_marginal": 42.94958844610414
+        },
+        {
+            "cobertura": 83.70256410256411,
+            "taxa_marginal": 42.820027818153406
+        },
+        {
+            "cobertura": 85.3323076923077,
+            "taxa_marginal": 43.093099459811
+        },
+        {
+            "cobertura": 86.96205128205128,
+            "taxa_marginal": 44.169689531330775
+        },
+        {
+            "cobertura": 88.59179487179487,
+            "taxa_marginal": 44.87112590969047
+        },
+        {
+            "cobertura": 90.22153846153847,
+            "taxa_marginal": 43.692643016811864
+        },
+        {
+            "cobertura": 91.85128205128206,
+            "taxa_marginal": 45.11012556314133
+        },
+        {
+            "cobertura": 93.48102564102564,
+            "taxa_marginal": 46.285934638926435
+        },
+        {
+            "cobertura": 95.11076923076924,
+            "taxa_marginal": 45.78419919972315
+        },
+        {
+            "cobertura": 96.74051282051283,
+            "taxa_marginal": 43.22918187719791
+        },
+        {
+            "cobertura": 98.37025641025642,
+            "taxa_marginal": 40.276359919019825
+        },
+        {
+            "cobertura": 100.0,
+            "taxa_marginal": 37.66235999701755
+        }
+    ],
+    "correlacao_por_porte": {
+        "Pequeno Porte (<20k)": 0.2211634276546979,
+        "Médio Porte (20k–100k)": 0.20079401450648127,
+        "Grande Porte (>100k)": 0.1075745763641524
+    }
+}
